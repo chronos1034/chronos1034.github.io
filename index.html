@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Chronos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-wdith, initial-scale=0.90">
+  <meta name="og:title" content="Chronos">
+  <meta name="og:description" content="Chronos' simple personal website">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/909404142437543946/920684756427997214/Asuka_6.jpg">
+  <meta name="theme-color" content="#000001">
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/909404142437543946/920684756427997214/Asuka_6.jpg">
+  <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet" type="text/css" media="all" onload="this.media='all'">
+
+  <style>
+    .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #111827;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    border-radius: 10px;
+  }
+  </style>
+  <script>
+    var visP = false;  
+    var visD = false;
+
+    document.toggleProjects = function() {
+      visP = !visP;
+      document.getElementById('main').className = (visP || visD) ? 'mt-24' : 'vertical-center';
+    };
+
+    document.toggleDiscords = function() {
+      visD = !visD; 
+      document.getElementById('main').className = (visD || visP) ? 'mt-24' : 'vertical-center';
+    };
+  </script>
+</head>
+<body class="text-center text-white bg-gray-900" style="overflow-x: hidden">
+  <div id="main" name="main" class="vertical-center">
+    <img src="https://github.com/chronos1034.png" alt="Chronos' avatar taken from github" class="rounded-full inline h-48 w-48 mb-5 shadow shadow-2xl" style="background: #0d0417">
+    <h1 class="text-4xl font-bold mb-2 align-middle">Heya, I'm Chronos.</h1>
+    <p style="color: rgb(150, 150, 150)" class="font-semibold mb-8">contact me on discord: <span style="color: rgb(221, 221, 221)" clas="font-semibold"><a href="https://discord.com/users/669472325556502529" target="_blank" class="hover:underline">Chronos#3072</a></span></p>
+
+    <div class="mx-auto w-screen mb-8">
+      <span>
+        <a href="https://discord.com/users/669472325556502529" target="_blank"><i class="fab fa-discord hover:text-blue-300 transition ease-in-and-out duration-200 text-3xl"></i></a> 
+        <a href="https://twitter.com/Chronos_1034" target="_blank" class="ml-14"><i class="fab fa-twitter hover:text-blue-500 transition ease-in-and-out duration-200 text-3xl"></i></a>
+        <a href="https://www.youtube.com/channel/UCxOMiYU9L4FyNor5M6QU3jQ" target="_blank" class="ml-14"><i class="fab fa-youtube hover:text-red-500 transition ease-in-and-out duration-200 text-3xl"></i></a>
+        <a href="https://www.instagram.com/chronos1034/" target="_blank" class="ml-14"><i class="fab fa-instagram hover:text-pink-300 transition ease-in-and-out duration-200 text-3xl"></i></a>
+      </span>
+    </div>
+
+    <a href="https://youtu.be/V-_O7nl0Ii0" target="_blank" class="block bg-gray-800 transition duration-200 ease-in-and-out rounded-lg w-80 mx-auto px-1 py-2 hover:bg-green-800 text-xl font-mono">
+      click or you're boring
+      <p style="color: rgb(133, 133, 133);" class="text-xs font-mono text-center">loading virus...</p>
+    </a>
+
+  </div>
+</body>
+</html>
