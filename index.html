@@ -10,47 +10,9 @@
   <link rel="icon" href="https://cdn.discordapp.com/attachments/909404142437543946/920684756427997214/Asuka_6.jpg">
   <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet" type="text/css" media="all" onload="this.media='all'">
+  <link rel="stylesheet" href="style.css" />
 
-  <style>
-    .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #111827;
-    border-radius: 10px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #4B5563;
-    border-radius: 10px;
-  }
-  </style>
-  <script>
-    var visP = false;  
-    var visD = false;
-
-    document.toggleProjects = function() {
-      visP = !visP;
-      document.getElementById('main').className = (visP || visD) ? 'mt-24' : 'vertical-center';
-    };
-
-    document.toggleDiscords = function() {
-      visD = !visD; 
-      document.getElementById('main').className = (visD || visP) ? 'mt-24' : 'vertical-center';
-    };
-  </script>
+  <script src="index.js"></script>
 </head>
 <body class="text-center text-white bg-gray-900" style="overflow-x: hidden">
   <div id="main" name="main" class="vertical-center">
